@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BasketPro</title>
+<link rel="stylesheet" href="website.css">
+</head>
+<body>
+
+<script>
+  // Wait for DOM to load
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all purchase checkboxes
+    const purchaseCheckboxes = document.querySelectorAll('.purchase-checkbox');
+    
+    purchaseCheckboxes.forEach(function(checkbox) {
+      checkbox.addEventListener('change', function() {
+        if (this.checked) {
+          // Uncheck after 3 seconds to hide the success message
+          setTimeout(() => {
+            this.checked = false;
+          }, 2000);
+        }
+      });
+    });
+  });
+</script>
+
+<header>
+<div class="logo">Alex BasketPro🏀</div>
+<nav>
+<label for="home">Home</label>
+<label for="about">About</label>
+<label for="products">Products</label>
+<label for="order">Order</label>
+<label for="contact">Contact Us</label>
+</nav>
+</header>
+
+
+<main>
+<input type="radio" name="tab" id="home" checked>
+<input type="radio" name="tab" id="about">
+<input type="radio" name="tab" id="products">
+<input type="radio" name="tab" id="order">
+<input type="radio" name="tab" id="contact">
+
+<section id="home-section">
+<div class="hero">
+<div class="hero-text">
+    <br>
+<h1>Get Quality <span>Basketball</span><br>in an Easy Way</h1>
+<p>
+Explore our wide range of basketball balls for training, indoor, and outdoor games. <br>
+Choose from different sizes and materials built for grip, control, and long use. <br>
+Whether you play on concrete courts or hardwood floors, you will find the right ball for your level. <br>
+We offer products for beginners, students, and competitive players. <br>
+Each ball is tested for durability and consistent bounce to support your performance. <br>
+High quality, affordable, and trusted brands available for every player. <br>
+Upgrade your game today with equipment designed to match your skills and playing style.<br>
+</p>
+
+<a href="#products" class="for-order" onclick="document.getElementById('products').checked = true;">Order Now</a>
+
+</div>
+</section>
+
+<section id="about-section">
+<h2>About Us</h2>
+<p class="about-intro">
+  Welcome to Alex BasketPro - Your Trusted Basketball Gear Provider!
+</p>
+
+<div class="about-content">
+  <div class="about-card">
+    <div class="about-icon">🏀</div>
+    <h3>Our Story</h3>
+    <p>Alex BasketPro was founded with a mission to provide basketball players with high-quality equipment at affordable prices. We specialize in authentic basketballs, performance shoes, and professional training gear.</p>
+  </div>
+
+  <div class="about-card">
+    <div class="about-icon">🎯</div>
+    <h3>Our Mission</h3>
+    <p>To help players of all levels access premium basketball gear without breaking the bank. We curate only the best products from trusted brands to ensure durability, performance, and comfort.</p>
+  </div>
+
+  <div class="about-card">
+    <div class="about-icon">⭐</div>
+    <h3>Why Choose Us</h3>
+    <ul>
+      <li>✅ Authentic branded products</li>
+      <li>✅ Competitive prices</li>
+      <li>✅ Fast and reliable service</li>
+      <li>✅ Expert product advice</li>
+      <li>✅ Nationwide delivery</li>
+    </ul>
+  </div>
+
+  <div class="about-card">
+    <div class="about-icon">👟</div>
+    <h3>Our Products</h3>
+    <p>We offer a wide range of basketball equipment including indoor/outdoor balls, performance shoes from top brands like Nike, Adidas, Under Armour, and training accessories for every athlete.</p>
+  </div>
+</div>
+
+<div class="about-cta">
+  <p>Ready to level up your game? <a href="#order-section">Order now</a> and experience the difference!</p>
+</div>
+</section>
+
+<section id="products-section">
+<h2>Our Products</h2>
+
+<!-- Hidden radio buttons for purchase (placed at section level for CSS sibling selector) -->
+<input type="radio" name="purchase" id="p1" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p2" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p3" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p4" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p5" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p6" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p7" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p8" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p9" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p10" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p11" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p12" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p13" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p14" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p15" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p16" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p17" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p18" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p19" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p20" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p21" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p22" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p23" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p24" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p25" class="purchase-checkbox">
+<input type="radio" name="purchase" id="p26" class="purchase-checkbox">
+
+<!-- Success Message and Overlay -->
+<div class="overlay"></div>
+<div class="success-message">✓ You Purchase Successfully!</div>
+
+<div class="product-grid">
+<div class="card">
+<img src="image_folder/f683614ed91f82afc85b4bc38b7a030b.jpg" alt="Spalding TF-1000">
+<h3>Spalding TF-1000</h3>
+<p>Indoor Basketball</p>
+<span>₱4,500</span>
+<label for="p1" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/52a1af666f3db917a63a488b3a72db94.jpg" alt="Molten BG4500">
+<h3>Molten BG4500</h3>
+<p>Indoor Basketball</p>
+<span>₱3,800</span>
+<label for="p2" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/S1ab38c92de3640709a99ceaad9fd195fD (2).jpg" alt="Wilson Evolution">
+<h3>Wilson Evolution</h3>
+<p>Indoor Basketball</p>
+<span>₱3,500</span>
+<label for="p3" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/353f52e800141a36508cfdcd07efd86c.jpg" alt="Wilson NCAA Replica">
+<h3>Wilson NCAA Replica</h3>
+<p>Indoor / Outdoor</p>
+<span>₱2,500</span>
+<label for="p4" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/624e91cea28367137faf36d75545b752 (1).jpg" alt="Molten B7G3800">
+<h3>Molten BG3800</h3>
+<p>Indoor / Outdoor</p>
+<span>₱2,300</span>
+<label for="p5" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/c95ffe80e558bc6d34e68b38af0500f6.jpg" alt="Nike Dominate">
+<h3>Nike Dominate</h3>
+<p>Outdoor Basketball</p>
+<span>₱1,200</span>
+<label for="p6" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/f683614ed91f82afc85b4bc38b7a030b.jpg" alt="Spalding Highlight">
+<h3>Spalding Highlight</h3>
+<p>Outdoor Basketball</p>
+<span>₱1,000</span>
+<label for="p7" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/624e91cea28367137faf36d75545b752 (1).jpg" alt="Molten B7G2000">
+<h3>Molten BG2000</h3>
+<p>Training Basketball</p>
+<span>₱900</span>
+<label for="p8" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/93fda5029bfcf1335ced9f78436b4e22.jpg" alt="Spalding Street Outdoor">
+<h3>Spalding Street Outdoor</h3>
+<p> Outdoor Basketball</p>
+<span>₱5000</span>
+<label for="p9" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/s-l1200.webp" alt="Mikasa BX1000">
+<h3>Mikasa BX1000</h3>
+<p>Training Basketball</p>
+<span>₱850</span>
+<label for="p10" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/d5cbb7a14174f3e67fe8e932178308a7.jpg" alt="Nike Air Jordan 37">
+<h3>Nike Air Jordan 37</h3>
+<p>Explosive guards/forwards</p>
+<span>₱11000</span>
+<label for="p11" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/7a6bca6cbfc52987d3d1ccd4e77fd2ac.jpg" alt="Adidas Harden Vol.7">
+<h3>Adidas Harden Vol.7</h3>
+<p>Scoring guards</p> 
+<span>₱12000</span>
+<label for="p12" class="purchase-btn">Purchase</label>
+</div> 
+<div class="card">
+<img src="image_folder/1f7a37ba67b9fd198f3dc58e149a1824.jpg" alt="Under Armour Curry 10">
+<h3>Under Armour Curry 10</h3>
+<p>Pointers/Shooters</p>
+<span>₱10500</span>
+<label for="p13" class="purchase-btn">Purchase</label>
+</div> 
+<div class="card">
+<img src="image_folder/e18b3c799caa3f9e8b6be4c963eebee3.jpg" alt="Puma Stewie 2">
+<h3>Puma Stewie 2</h3>
+<p>Versatil players</p>
+<span>₱11000</span>
+<label for="p14" class="purchase-btn">Purchase</label>
+</div> 
+<div class="card">
+<img src="image_folder/21929fca90c2ef4e471f0f923ea1cd4a.jpg" alt="New Balance Two WXY V4">
+<h3>New Balance Two WXY V4</h3>
+<p>All around players</p>
+<span>₱9000</span>
+<label for="p15" class="purchase-btn">Purchase</label>
+</div> 
+<div class="card">
+<img src="image_folder/c4e7384b6a7dab98e0450727d4c0420a.jpg" alt="Lining Wade 10">
+<h3>Lining Wade 10</h3>
+<p>Elite Guards</p>  
+<span>₱13000</span>
+<label for="p16" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/6058086e20a327c5c70fd44dbb9dc802.jpg" alt="Nike Lebron 20">
+<h3>Nike Lebron 20</h3>
+<p>Poweful forwards</p>  
+<span>₱20000</span>
+<label for="p17" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/2624b2d6f84a03987e51d605a4e8d940.jpg" alt="Adidas Dame 8">
+<h3>Adidas Dame 8</h3>    
+<p>Dynamic guards</p>
+<span>₱12000</span>
+<label for="p18" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/cu9468-010.jpg" alt="Nike Dri-Fit">
+<h3>Nike Dri-Fit</h3>
+<p>Moisture-wicking athletic wear</p>
+<span>₱4500</span>
+<label for="p19" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/1c57d70f8245f481b01a0ec535581f15.jpg" alt="Mc David Knee Strap">
+<h3>Mc David Knee Strap</h3>
+<p>Knee Support</p>
+<span>₱2300</span>
+<label for="p20" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/98f20326019152ac0eb2aa93f4998761.jpg" alt="Under Armour Arm Sleeves">
+<h3>Under Armour Arm Sleeves</h3>
+<p>Arm Compression</p>
+<span>₱1500</span>
+<label for="p21" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/ebcf2e5cf77746baf3dc5c61e0bf9e15.jpg" alt="SKLZ Resistances Bands">
+<h3>SKLZ Resistances Bands</h3>
+<p>Strength Training</p>
+<span>₱1300</span>
+<label for="p22" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/869d748609d374f136de2480ffd18230.jpg" alt="Mueller Athletic Tape">
+<h3>Mueller Athletic Tape</h3>
+<p>Secure joints/blister</p>
+<span>₱1000</span>
+<label for="p23" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/2_2614ae85-6961-49b5-b4ff-4c0a6107b741.jpg" alt="Spalding Grip Powder">
+<h3>Spalding Grip Powder</h3>
+<p>Improves hand grip</p>
+<span>₱800</span>
+<label for="p24" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/c119d906c8c6a05d2e4456f1bceca0f9.jpg" alt="Nike Pro Padded Shorts">
+<h3>Nike Pro Padded Shorts</h3>
+<p>Hip/thigh protection</p>
+<span>₱2200</span>
+<label for="p25" class="purchase-btn">Purchase</label>
+</div>
+<div class="card">
+<img src="image_folder/86e1f7c01e917e8520dcf088de0d9976.jpg" alt="Puma Hoops Socks">
+<h3>Puma Hoops Socks</h3>
+<p>Foot Compression</p>
+<span>₱700</span>
+<label for="p26" class="purchase-btn">Purchase</label>
+</div>
+
+</section>
+
+<section id="order-section">
+<h2>How to Order</h2>
+<p class="order-intro">
+  Follow these simple steps to order your basketball gear:
+</p>
+
+<div class="order-steps">
+  <div class="step-card">
+    <div class="step-number">1</div>
+    <h3>Browse Products</h3>
+    <p>Explore our wide selection of basketballs, shoes, and training gear in the Products section.</p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-number">2</div>
+    <h3>Select Your Items</h3>
+    <p>Choose your desired products and note down the item names and prices.</p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-number">3</div>
+    <h3>Contact Us</h3>
+    <p>Reach out via email or phone to place your order. We'll confirm availability.</p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-number">4</div>
+    <h3>Confirm & Pay</h3>
+    <p>We'll send you payment details. Pay via bank transfer or GCash.</p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-number">5</div>
+    <h3>Delivery</h3>
+    <p>Receive your order via COD or meet for pickup. Fast shipping nationwide!</p>
+  </div>
+</div>
+
+<div class="order-contact">
+  <h3>Ready to Order?</h3>
+  <p>Contact us today and start your basketball journey!</p>
+  <div class="contact-info">
+    <span>📧 Email: alexbarcelonajr@gmail.com</span>
+    <span>📞 Phone: 0985-217-4524</span>
+  </div>
+</div>
+</section>
+
+
+<section id="contact-section">
+<h2>Contact Us</h2>
+<p class="contact-intro">
+  Have questions or need help? We're here to assist you!
+</p>
+
+<div class="contact-container">
+  <div class="contact-card">
+    <div class="contact-icon">📧</div>
+    <h3>Email</h3>
+    <p>Send us an email anytime</p>
+    <a href="mailto:alexbarcelonajr@gmail.com">alexbarcelonajr@gmail.com</a>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-icon">📞</div>
+    <h3>Phone</h3>
+    <p>Mon-Sat, 9AM-6PM</p>
+    <a href="tel:09852174524">0985-217-4524</a>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-icon">💬</div>
+    <h3>Messenger</h3>
+    <p>Chat with us on Messenger</p>
+    <a href="#">Message Us</a>
+  </div>
+
+  <div class="contact-card">
+    <div class="contact-icon">📍</div>
+    <h3>Location</h3>
+    <p>Serving nationwide</p>
+    <span>Philippines</span>
+  </div>
+</div>
+
+<div class="contact-cta">
+  <h3>Follow Us</h3>
+  <p>Stay updated with our latest products and promotions!</p>
+  <div class="social-links">
+    <a href="#" class="social-btn">Facebook</a>
+    <a href="#" class="social-btn">Instagram</a>
+    <a href="#" class="social-btn">Twitter</a>
+  </div>
+</div>
+
+<div class="business-hours">
+  <h3>Business Hours</h3>
+  <ul>
+    <li><span>Monday - Friday:</span> 9:00 AM - 7:00 PM</li>
+    <li><span>Saturday:</span> 9:00 AM - 6:00 PM</li>
+    <li><span>Sunday:</span> Closed</li>
+  </ul>
+</div>
+</section>
+</main>
+ <footer>
+      <p>&copy; 2026 Alex BasketPro. All rights reserved.</p>
+      <p>Designed with by <a href="mailto:jaredluzon84@gmail.com">Alex Barcelona</a></p>
+      <p style="margin-top: 15px; font-size: 0.9rem">
+        <a href="#home-section">Home</a> |
+        <a href="#about-section">About</a> | <a href="#contact-section">Contact</a>
+      </p>
+    </footer>
+
+</body>
+</html>
